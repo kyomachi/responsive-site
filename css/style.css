@@ -1,0 +1,113 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+/* Base
+------------------------------------------------------------*/
+html {
+  font-size: 62.5%; }
+
+body {
+  color: #4c4c4c;
+  font-size: 1.4rem;
+  font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.1em; }
+
+a {
+  color: #64D9B8;
+  text-decoration: none; }
+  a:visited {
+    color: #3bcfa5; }
+  a:hover {
+    color: #3bcfa5; }
+  a:active {
+    color: #78dec1; }
+
+/* Align
+------------------------------------------------------------*/
+.text-center {
+  text-align: center; }
+
+/* Font
+------------------------------------------------------------*/
+.uppercase {
+  text-transform: uppercase; }
+
+/* Header
+------------------------------------------------------------*/
+.top-cover {
+  width: 100%;
+  height: 100%;
+  background: url(../images/img_work_web.jpg) center center no-repeat;
+  background-size: cover; }
+
+#lectures, .top-cover {
+  background-color: #FAB2BA; }
+
+/* Main
+------------------------------------------------------------*/
+.base-color {
+  background-color: #FFFFF7; }
+
+.lectures {
+  font-size: 3.0rem;
+  padding: 40px 0 0 0; }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 30px 0; }
+
+.lecture-box {
+  padding: 5px;
+  margin: 15px;
+  border-radius: 8px; }
+  .lecture-box .lecture-icon {
+    font-size: 2.4rem;
+    color: #64D9B8; }
+  .lecture-box .lecture-title {
+    font-size: 2.0rem;
+    padding: 10px; }
+  .lecture-box .lecture-overview {
+    padding: 10px; }
+
+#lectures-bottom {
+  padding: 30px 0 70px 0; }
+
+.button-message {
+  width: 300px;
+  margin: 30px auto 10px; }
+
+.button {
+  width: 300px;
+  margin: 0 auto;
+  background-color: #64D9B8;
+  border: 1px solid #64D9B8;
+  box-sizing: border-box;
+  height: 36px;
+  border-radius: 18px;
+  cursor: pointer; }
+
+.button a {
+  display: inline-block;
+  line-height: 36px;
+  text-decoration: none;
+  color: #4c4c4c; }
+
+@media (max-width: 768px) {
+  img, .top-cover {
+    height: 250px; }
+
+  .container {
+    flex-direction: column; }
+
+  .lecture-box {
+    width: auto; } }
+@media (min-width: 769px) {
+  img, .top-cover {
+    height: 500px; }
+
+  .lecture-box {
+    width: 30%; } }
+
+/*# sourceMappingURL=style.css.map */

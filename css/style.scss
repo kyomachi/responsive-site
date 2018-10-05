@@ -1,0 +1,173 @@
+@import "compass";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+
+// font-family
+$baseFontFamily :"游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+// colors
+
+$baseColor: #FFFFF7;
+$subColor: #FAB2BA;
+$keyColor: #64D9B8;
+$fontColor: #4c4c4c;
+
+/* Base
+------------------------------------------------------------*/
+html{ font-size: 62.5%; }
+
+body{
+  color: $fontColor;
+  font-size: 1.4rem;
+  font-family: $baseFontFamily;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  // background-color: $baseColor;
+}
+
+a {
+  @include link-colors($keyColor, darken($keyColor, 10%), lighten($keyColor, 5%), darken($keyColor, 10%));
+  text-decoration: none;
+}
+
+/* Align
+------------------------------------------------------------*/
+.text-center {
+  text-align: center;
+}
+
+/* Font
+------------------------------------------------------------*/
+.uppercase {
+  text-transform: uppercase;
+}
+
+
+/* Header
+------------------------------------------------------------*/
+// img {
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+// }
+
+// header {
+//   position: relative;
+// }
+
+// .site-title {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: auto;
+//   padding: 5px 10px;
+//   background-color: $fontColor;
+//   text-align: left;
+//   font-size: 1.2rem;
+//   color: #FFF;
+// }
+
+.top-cover {
+    width: 100%;
+    height: 100%;
+    background: url(../images/img_work_web.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+#lectures,.top-cover {
+  background-color: $subColor;
+}
+
+/* Main
+------------------------------------------------------------*/
+.base-color {
+  background-color: $baseColor;
+}
+
+.lectures {
+  font-size: 3.0rem;
+  padding: 40px 0 0 0;
+  // text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 30px 0;
+}
+
+.lecture-box {
+  padding: 5px;
+  margin: 15px;
+  // background-color: $baseColor;
+  border-radius: 8px;
+  
+  .lecture-icon {
+    font-size: 2.4rem;
+    color: $keyColor;
+  }
+
+  .lecture-title {
+    font-size: 2.0rem;
+    padding: 10px;
+    // text-align: center;
+    // background-color: $baseColor;
+  }
+  
+  .lecture-overview {
+    padding: 10px;
+    // background-color: $baseColor;
+  }
+}
+
+#lectures-bottom {
+  // background-color: $baseColor;
+  padding: 30px 0 70px 0;
+}
+
+.button-message {
+  // text-align: center;
+  width: 300px;
+  margin: 30px auto 10px;
+}
+
+.button {
+  // text-align: center;
+  width: 300px;
+  margin: 0 auto;
+  background-color: $keyColor;
+  border: 1px solid $keyColor;
+  box-sizing: border-box;
+  height: 36px;
+  border-radius: 18px;
+  cursor: pointer;
+}
+
+.button a {
+  display: inline-block;
+  line-height: 36px;
+  text-decoration: none;
+  color: $fontColor;
+}
+
+@media (max-width: 768px) {
+  img,.top-cover {
+    height: 250px;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .lecture-box {
+      width: auto;
+  }
+}
+
+@media (min-width: 769px) {
+  img,.top-cover {
+    height: 500px;
+  }
+  .lecture-box {
+      width: 30%;
+  }
+}
